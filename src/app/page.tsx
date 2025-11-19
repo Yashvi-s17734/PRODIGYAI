@@ -1,65 +1,162 @@
+'use client'
+import React from "react";
+import dashboard from "@/assets/dashboard.jpg";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
-export default function Home() {
+function page() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <motion.div
+        className="flex flex-col items-center text-center"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <motion.h2
+          className="font-bold text-4xl text-blue-600"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Welcome to SmartLife 
+        </motion.h2>
+
+        <motion.p
+          className="text-black text-lg max-w-2xl mt-[1em] leading-relaxed"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
+          Your AI-powered productivity companion — organize your tasks, track
+          your habits, and plan your day smarter with intelligent assistance.
+        </motion.p>
+
+        <motion.button
+          className="bg-blue-600 px-5 py-2 rounded-lg mt-[1em] text-white font-bold"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Get Started
+        </motion.button>
+        <motion.div
+          className="grid md:grid-cols-3 gap-6 max-w-5xl w-full px-4 mt-[1em]"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+        >
+          <motion.div
+            className="bg-white border rounded-lg p-6"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 200 }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <span>1️⃣</span>
+            <h3 className="text-lg font-semibold text-blue-600 mb-2">
+              Manage Your Tasks
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Add, prioritize, and complete your daily tasks efficiently with
+              smart reminders.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="bg-white border rounded-lg p-6"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 200 }}
           >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            <span>2️⃣</span>
+            <h3 className="text-lg font-semibold text-blue-600 mb-2">
+              Track Your Habits
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Stay consistent with personalized habit tracking and daily
+              progress charts.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="bg-white border rounded-lg p-6"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 200 }}
+          >
+            <span>3️⃣</span>
+            <h3 className="text-lg font-semibold text-blue-600 mb-2">
+              Get AI Guidance
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Let SmartLife’s AI assistant optimize your schedule and improve
+              your productivity.
+            </p>
+          </motion.div>
+        </motion.div>
+        <motion.h2
+          className="font-bold text-3xl text-blue-600 mt-[1em]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          Your Day, Simplified
+        </motion.h2>
+
+        <motion.p
+          className="text-black text-lg max-w-2xl mt-[1em] leading-relaxed"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8, duration: 0.8 }}
+        >
+          SmartLife brings everything together - your tasks, habits, and AI
+          Suggestions - into one clean, modern dashboard that adapts to your
+          goals.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+        >
+          <Image
+            src={dashboard}
+            width={600}
+            height={600}
+            alt="dashboard"
+            className="mt-[1em] rounded-xl shadow-md"
+          />
+        </motion.div>
+        <motion.p
+          className="text-black text-lg max-w-2xl mt-[1em] leading-relaxed text-xl font-medium"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
+        >
+          Ready to make your life smarter?
+        </motion.p>
+
+        <motion.div
+          className="space-x-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.4, duration: 0.8 }}
+        >
+          <motion.button
+            className="bg-blue-600 px-10 py-2 rounded-lg mt-[1em] text-white"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Continue to Login
+          </motion.button>
+
+          <motion.button
+            className="border border-gray-400 px-10 py-2 rounded-lg mt-[1em] text-black"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Explore as Guest
+          </motion.button>
+        </motion.div>
+      </motion.div>
+    </>
   );
 }
+
+export default page;
