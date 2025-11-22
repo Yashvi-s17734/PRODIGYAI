@@ -3,6 +3,8 @@ import React from "react";
 import dashboard from "@/assets/dashboard.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
+import animationData from "../dashboard.json";
 
 function page() {
   return (
@@ -115,16 +117,18 @@ function page() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          <Image
-            src={dashboard}
-            width={600}
-            height={600}
-            alt="dashboard"
-            className="mt-[1em] rounded-xl shadow-md"
+          <div className="text-center px-8">
+          <Lottie
+            animationData={animationData}
+            loop={true}
+            width={100}
+            height={130}
+            className="mx-auto"
           />
+        </div>
         </motion.div>
         <motion.p
-          className="text-black text-lg max-w-2xl mt-[1em] leading-relaxed text-xl font-medium"
+          className="text-black text-lg max-w-2xl leading-relaxed text-xl font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
