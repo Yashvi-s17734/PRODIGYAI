@@ -2,10 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ClientLayout from "./ClientLayout";
 import { Inter } from "next/font/google";
-import Nav from "./components/nav";
-import Sidebar from "./components/Sidebar";
-import { Geist, Geist_Mono } from "next/font/google";
-
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,17 +15,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
-      <html lang="en">
+    <html lang="en">
       <body className={`${inter.className} bg-white`}>
-        <Nav />
-        <div className="flex pt-[70px]">
-          <aside className="w-64 h-screen fixed left-0 top-[60px] bg-blue-600">
-            <Sidebar />
-          </aside>
-          <main className="ml-60 w-full p-6">{children}</main>
-        </div>
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   );

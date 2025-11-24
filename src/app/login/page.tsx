@@ -74,7 +74,7 @@ export default function LoginPage() {
         </div>
       </div>
       <div className="hidden md:flex w-1/2 bg-gradient-to-br from-blue-500 to-indigo-500 text-white items-center justify-center">
-        <div className="text-center px-8">
+        <div className="text-center px-8 ">
           <Lottie
             animationData={animationData}
             loop={true}

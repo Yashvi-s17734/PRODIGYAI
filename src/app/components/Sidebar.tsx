@@ -7,21 +7,21 @@ function Sidebar() {
       <nav className={`space-y-6 m-6 p-3`}>
         <a
           href="/dashboard"
-          className="text-white hover:text-blue-600 block p-2 rounded hover:bg-white font-bold "
+          className="text-blue-600 hover:text-white block p-2 rounded hover:bg-blue-600 font-bold "
         >
-          Profile
+          Dashboard
         </a>
 
          <a
           href="/dashboard"
-          className="text-white hover:text-blue-600 block p-2 rounded hover:bg-white font-bold "
+          className="text-blue-600 hover:text-white block p-2 rounded hover:bg-blue-600 font-bold"
         >
-          Profile
+          Task
         </a>
 
          <a
           href="/dashboard"
-          className="text-white hover:text-blue-600 block p-2 rounded hover:bg-white font-bold "
+          className="text-blue-600 hover:text-white block p-2 rounded hover:bg-blue-600 font-bold"
         >
           Profile
         </a>

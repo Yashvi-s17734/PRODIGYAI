@@ -3,8 +3,14 @@ import React from 'react';
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { navigate } from 'next/dist/client/components/segment-cache-impl/navigation';
+import { useRouter } from 'next/navigation';
+
 
 function Nav() {
+
+  const router = useRouter()
+ 
   return (
     // Navbar Container Animation
     <motion.div
@@ -31,7 +37,7 @@ function Nav() {
         whileTap={{ scale: 0.95 }}
         transition={{ type: 'spring', stiffness: 200 }}
       >
-        <button className="text-white">Login</button>
+        <button className="text-white" onClick={()=>router.push("/login")}>Login</button>
       </motion.div>
     </motion.div>
   );
