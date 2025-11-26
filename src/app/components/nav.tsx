@@ -14,14 +14,14 @@ function Nav() {
   return (
     // Navbar Container Animation
     <motion.div
-      className="fixed top-0 bg-white h-[60px] w-full flex items-center justify-between font-bold px-2 shadow-lg z-50"
+      className="fixed top-0 bg-black h-[60px] w-full flex items-center justify-between font-bold px-2 shadow-lg z-50"
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
       {/* Logo / Title */}
       <motion.div
-        className="text-blue-600 text-2xl flex items-center gap-2"
+        className="text-[#98FB98] text-2xl flex items-center gap-2"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.3, duration: 0.6 }}
@@ -32,7 +32,7 @@ function Nav() {
 
       {/* Login Button Animation */}
       <motion.div
-        className="bg-blue-600 px-4 py-2 rounded-lg"
+        className="bg-[#00A86B] px-4 py-2 rounded-lg"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         transition={{ type: 'spring', stiffness: 200 }}

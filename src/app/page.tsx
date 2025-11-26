@@ -16,7 +16,7 @@ function page() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <motion.h2
-          className="font-bold text-4xl text-blue-600"
+          className="font-bold text-4xl text-[#98FB98]"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -25,7 +25,7 @@ function page() {
         </motion.h2>
 
         <motion.p
-          className="text-black text-lg max-w-2xl mt-[1em] leading-relaxed"
+          className="text-[#00A86B]  text-lg max-w-2xl mt-[1em] leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
@@ -35,65 +35,65 @@ function page() {
         </motion.p>
 
         <motion.button
-          className="bg-blue-600 px-5 py-2 rounded-lg mt-[1em] text-white font-bold"
+          className="bg-[#00A86B] px-5 py-2 rounded-lg mt-[1em] text-white font-bold"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           Get Started
         </motion.button>
         <motion.div
-          className="grid md:grid-cols-3 gap-6 max-w-5xl w-full px-4 mt-[1em]"
+          className="grid md:grid-cols-3 gap-6 max-w-5xl w-full px-4 mt-[1em] "
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <motion.div
-            className="bg-white border rounded-lg p-6"
+            className=" bg-black border border-[#98FB98] rounded-lg p-6 shadow-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
             <span>1️⃣</span>
-            <h3 className="text-lg font-semibold text-blue-600 mb-2">
+            <h3 className="text-lg font-semibold text-[#98FB98]">
               Manage Your Tasks
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-[#00A86B] text-sm leading-relaxed">
               Add, prioritize, and complete your daily tasks efficiently with
               smart reminders.
             </p>
           </motion.div>
 
           <motion.div
-            className="bg-white border rounded-lg p-6"
+            className="bg-black border border-[#98FB98] rounded-lg p-6 shadow-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
             <span>2️⃣</span>
-            <h3 className="text-lg font-semibold text-blue-600 mb-2">
+            <h3 className="text-lg font-semibold text-[#98FB98] mb-2">
               Track Your Habits
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-[#00A86B] text-sm leading-relaxed">
               Stay consistent with personalized habit tracking and daily
               progress charts.
             </p>
           </motion.div>
 
           <motion.div
-            className="bg-white border rounded-lg p-6"
+            className="bg-black border border-[#98FB98] rounded-lg p-6 shadow-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
             <span>3️⃣</span>
-            <h3 className="text-lg font-semibold text-blue-600 mb-2">
+            <h3 className="text-lg font-semibold text-[#98FB98] mb-2">
               Get AI Guidance
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-[#00A86B] text-sm leading-relaxed">
               Let SmartLife’s AI assistant optimize your schedule and improve
               your productivity.
             </p>
           </motion.div>
         </motion.div>
         <motion.h2
-          className="font-bold text-3xl text-blue-600 mt-[1em]"
+          className="font-bold text-3xl text-[#98FB98] mt-[1em]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
@@ -102,7 +102,7 @@ function page() {
         </motion.h2>
 
         <motion.p
-          className="text-black text-lg max-w-2xl mt-[1em] leading-relaxed"
+          className="text-[#00A86B] text-lg max-w-2xl mt-[1em] leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}

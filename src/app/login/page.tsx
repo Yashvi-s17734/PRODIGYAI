@@ -1,6 +1,7 @@
 "use client";
 import Lottie from "lottie-react";
-import animationData from "./Login.json";
+import animationData from "../../dashboard.json";
+
 export default function LoginPage() {
   return (
     <div className="min-h-screen flex">
@@ -66,14 +67,17 @@ export default function LoginPage() {
 
             <p className="text-sm text-center">
               Don’t have an account?{" "}
-              <a href="/signup" className="text-blue-600 font-medium hover:underline">
+              <a
+                href="/signup"
+                className="text-blue-600 font-medium hover:underline"
+              >
                 Sign Up
               </a>
             </p>
           </form>
         </div>
       </div>
-      <div className="hidden md:flex w-1/2 bg-gradient-to-br from-blue-500 to-indigo-500 text-white items-center justify-center">
+      <div className="hidden md:flex w-1/2 bg-gradient-to-br from-[#98FB98] to-[#00A86B] text-white items-center justify-center">
         <div className="text-center px-8 ">
           <Lottie
             animationData={animationData}
