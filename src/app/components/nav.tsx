@@ -14,7 +14,7 @@ function Nav() {
   return (
     // Navbar Container Animation
     <motion.div
-      className="fixed top-0 bg-black h-[60px] w-full flex items-center justify-between font-bold px-2 shadow-lg z-50"
+      className="fixed top-0 bg-[#1A1A1A] h-[60px] w-full flex items-center justify-between font-bold px-2 shadow-lg z-50"
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}

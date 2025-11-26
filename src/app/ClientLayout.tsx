@@ -21,7 +21,7 @@ export default function ClientLayout({
       <div className="flex">
       
         {!hideLayout && (
-          <aside className="w-64 h-screen fixed left-0 top-[60px] bg-black shadow-lg">
+          <aside className="w-64 h-screen fixed left-0 top-[60px] bg-[#1A1A1A] shadow-lg">
             <Sidebar />
           </aside>
         )}

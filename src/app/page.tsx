@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import dashboard from "@/assets/dashboard.jpg";
 import Image from "next/image";
@@ -21,7 +21,7 @@ function page() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Welcome to SmartLife 
+          Welcome to SmartLife
         </motion.h2>
 
         <motion.p
@@ -35,7 +35,7 @@ function page() {
         </motion.p>
 
         <motion.button
-          className="bg-[#00A86B] px-5 py-2 rounded-lg mt-[1em] text-white font-bold"
+          className="bg-[#00A86B] px-5 py-2 rounded-lg mt-[1em] text-white font-bold border border-[#98FB98]"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -48,11 +48,11 @@ function page() {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <motion.div
-            className=" bg-black border border-[#98FB98] rounded-lg p-6 shadow-lg"
+            className=" bg-[#1A1A1A] border border-[#98FB98] rounded-lg p-6 shadow-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <span>1️⃣</span>
+            <span className="text-[#00A86B] font-bold text-xl">1️.</span>
             <h3 className="text-lg font-semibold text-[#98FB98]">
               Manage Your Tasks
             </h3>
@@ -63,11 +63,11 @@ function page() {
           </motion.div>
 
           <motion.div
-            className="bg-black border border-[#98FB98] rounded-lg p-6 shadow-lg"
+            className="bg-[#1A1A1A] border border-[#98FB98] rounded-lg p-6 shadow-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <span>2️⃣</span>
+            <span className="text-[#00A86B] font-bold text-xl">2️.</span>
             <h3 className="text-lg font-semibold text-[#98FB98] mb-2">
               Track Your Habits
             </h3>
@@ -78,11 +78,11 @@ function page() {
           </motion.div>
 
           <motion.div
-            className="bg-black border border-[#98FB98] rounded-lg p-6 shadow-lg"
+            className="bg-[#1A1A1A] border border-[#98FB98] rounded-lg p-6 shadow-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <span>3️⃣</span>
+            <span className="text-[#00A86B] font-bold text-xl">3️.</span>
             <h3 className="text-lg font-semibold text-[#98FB98] mb-2">
               Get AI Guidance
             </h3>
@@ -118,17 +118,17 @@ function page() {
           transition={{ delay: 1, duration: 0.8 }}
         >
           <div className="text-center px-8">
-          <Lottie
-            animationData={animationData}
-            loop={true}
-            width={100}
-            height={130}
-            className="mx-auto"
-          />
-        </div>
+            <Lottie
+              animationData={animationData}
+              loop={true}
+              width={100}
+              height={130}
+              className="mx-auto"
+            />
+          </div>
         </motion.div>
         <motion.p
-          className="text-black text-lg max-w-2xl leading-relaxed text-xl font-medium"
+          className="text-[#98FB98] text-lg max-w-2xl leading-relaxed text-xl font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
@@ -143,7 +143,7 @@ function page() {
           transition={{ delay: 1.4, duration: 0.8 }}
         >
           <motion.button
-            className="bg-blue-600 px-10 py-2 rounded-lg mt-[1em] text-white"
+            className="bg-[#00A86B] px-10 py-2 rounded-lg mt-[1em] text-white border border-[#98FB98]"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -151,7 +151,7 @@ function page() {
           </motion.button>
 
           <motion.button
-            className="border border-gray-400 px-10 py-2 rounded-lg mt-[1em] text-black"
+            className="border border-[#98FB98] px-10 py-2 rounded-lg mt-[1em] text-white bg-black"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
