@@ -27,7 +27,7 @@ export default function ClientLayout({
         )}
 
       
-        <main className={!hideLayout ? "ml-60 w-full p-6" : "w-full"}>
+        <main className={!hideLayout ? "ml-60 w-full p-6 pt-[70px]" : "w-full"}>
           {children}
         </main>
       </div>
