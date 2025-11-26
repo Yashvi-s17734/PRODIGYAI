@@ -27,7 +27,7 @@ function Nav() {
         transition={{ delay: 0.3, duration: 0.6 }}
       >
         {/* <Image src={logo} width={100} height={150} alt='logo'/> */}
-        SmartLife 🧠
+        SmartLife 
       </motion.div>
 
       {/* Login Button Animation */}

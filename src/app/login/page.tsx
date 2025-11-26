@@ -9,67 +9,67 @@ export default function LoginPage() {
         <div className="flex flex-col space-y-6">
           <div>
             <div className="flex items-center space-x-2">
-              <div className="w-6 h-6 bg-blue-600 rotate-45"></div>
+              <div className="w-6 h-6 bg-[#00A86B] rotate-45"></div>
             </div>
-            <h2 className="text-2xl font-semibold mt-4">Welcome Back!</h2>
-            <p className="text-gray-500 text-sm">Please enter your details</p>
+            <h2 className="text-2xl font-semibold mt-4 text-[#00A86B]">Welcome Back!</h2>
+            <p className="text-[#00A86B] text-sm">Please enter your details</p>
           </div>
           <form className="space-y-5">
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-[#00A86B]">
                 Email Address
               </label>
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="mt-1 w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 outline-none"
+                className="mt-1 w-full border border-[#00A86B] rounded-md p-2 focus:ring-2 focus:ring-blue-500 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-[#00A86B]">
                 Password
               </label>
               <input
                 type="password"
                 placeholder="Enter your password"
-                className="mt-1 w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 outline-none"
+                className="mt-1 w-full border border-[#00A86B] rounded-md p-2 focus:ring-2 focus:ring-blue-500 outline-none"
               />
             </div>
 
             <div className="flex items-center justify-between text-sm">
               <label className="flex items-center space-x-2">
-                <input type="checkbox" className="accent-blue-600" />
+                <input type="checkbox" className="accent-[#00A86B]" />
                 <span>Remember me</span>
               </label>
-              <a href="#" className="text-blue-600 hover:underline">
+              <a href="#" className="text-[#00A86B] hover:underline">
                 Forgot Password?
               </a>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+              className="w-full bg-[#00A86B] text-white py-2 rounded-md transition"
             >
               Login →
             </button>
 
-            <p className="text-xs text-gray-500 text-center">
+            <p className="text-xs text-[#00A86B] text-center">
               By creating an account, you agree to our{" "}
-              <a href="#" className="text-blue-600">
+              <a href="#" className="text-[#98FB98]">
                 Terms of Service
               </a>{" "}
               and{" "}
-              <a href="#" className="text-blue-600">
+              <a href="#" className="text-[#98FB98]">
                 Privacy Policy
               </a>
               .
             </p>
 
-            <p className="text-sm text-center">
+            <p className="text-sm text-center text-[#00A86B]">
               Don’t have an account?{" "}
               <a
                 href="/signup"
-                className="text-blue-600 font-medium hover:underline"
+                className="text-[#98FB98] font-medium hover:underline"
               >
                 Sign Up
               </a>
